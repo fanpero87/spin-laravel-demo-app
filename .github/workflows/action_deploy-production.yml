@@ -29,7 +29,7 @@ jobs:
     uses: ./.github/workflows/service_docker-build-and-publish.yml
     with:
       # 👇 Ensure these are the tags you want to publish to your registry.
-      docker-tags: ghcr.io/${{ github.repository }}:${{ github.ref_name }},ghcr.io/${{ github.repository }}:v1.0.0
+      docker-tags: ghcr.io/${{ github.repository }}:${{ github.ref_name }},ghcr.io/${{ github.repository }}:latest
       environment: production # 👈 Make sure you created this environment in GitHub with the secrets above.
     secrets: inherit
   
