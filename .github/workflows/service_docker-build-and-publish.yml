@@ -71,6 +71,3 @@ jobs:
           registry-token: "${{ secrets.GITHUB_TOKEN }}"
           platforms: "${{ inputs.platforms }}"
           target: "${{ inputs.target }}"
-        permissions:
-          contents: read
-          package: write
